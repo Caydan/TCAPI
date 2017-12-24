@@ -1,1 +1,55 @@
-{}
+{
+  "tc-api": {
+    "host": "localhost",
+    "port": 3306,
+    "database": "api",
+    "password": "trinity",
+    "name": "tdb-api",
+    "connector": "mysql",
+    "user": "trinity"
+  },
+  "tdb-auth": {
+    "host": "localhost",
+    "port": 3306,
+    "database": "auth",
+    "password": "trinity",
+    "name": "tdb-auth",
+    "connector": "mysql",
+    "user": "trinity"
+  },
+  "tdb-characters": {
+    "host": "localhost",
+    "port": 3306,
+    "database": "characters",
+    "password": "trinity",
+    "name": "tdb-characters",
+    "connector": "mysql",
+    "user": "trinity"
+  },
+  "tdb-world": {
+    "host": "localhost",
+    "port": 3306,
+    "database": "world",
+    "password": "trinity",
+    "name": "tdb-world",
+    "connector": "mysql",
+    "user": "trinity"
+  },
+  "email": {
+    "name": "mail",
+    "connector": "mail",
+    "tls": {
+      "rejectUnauthorized": false
+    },
+    "transports": [{
+      "type": "SMTP",
+      "host": "smtp.example.com",
+      "secure": true,
+      "port": 465,
+      "auth": {
+        "user": "username@example.com",
+        "pass": "password"
+      }
+    }]
+  }
+}

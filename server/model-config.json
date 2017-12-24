@@ -12,5 +12,34 @@
       "../common/mixins",
       "./mixins"
     ]
+  },
+  "User": {
+    "dataSource": "tc-api"
+  },
+  "AccessToken": {
+    "dataSource": "tc-api",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "tc-api",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "tc-api",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "tc-api",
+    "public": false
+  },
+  "Account": {
+    "dataSource": "tdb-auth",
+    "public": false
+  },
+  "Email": {
+    "dataSource": "email"
   }
 }
